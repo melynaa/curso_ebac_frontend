@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>lista de tarefas</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 24px;
+            border-radius: 10px;
+        }
+
+        form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 16px;
+            cursor: pointer;
+        }
+
+        li {
+            cursor: pointer;
+            margin-bottom: 8px;
+        }
+
+        .concluida {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>lista de tarefas</h1>
+
+<form id="form-tarefa">
+    <input type="text" id="nome-tarefa" placeholder="nome da tarefa" required>
+    <button type="submit">cadastrar</button>
+</form>
+
+<ul id="lista-tarefas"></ul>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
